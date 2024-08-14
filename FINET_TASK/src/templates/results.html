@@ -1,46 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading Animation</title>
-    <style>
-        .loading-dots {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px; /* Adjust as needed */
-        }
-
-        .dot {
-            width: 8px; /* Adjust the size of the dots */
-            height: 8px;
-            background-color: #333; /* Dot color */
-            border-radius: 50%;
-            margin: 0 10px; /* Space between the dots */
-            animation: pulse 1s infinite;
-        }
-
-        .dot:nth-child(2) {
-            animation-delay: 0.5s; /* Stagger animation for the second dot */
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.5);
-                opacity: 0.5;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="loading-dots">
-        <div class="dot"></div>
-        <div class="dot"></div>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/results.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="s01">
+      <div class="search-item">
+        <div class="results">
+          <div class="flag"><a href="{{res_list[0].flag }}" target="_blank"><img src="{{ res_list[0].flag }}" alt=""></a></div>
+          <h3><a id="" href="{{ res_list[0].location }}" target="_blank"> {{ res_list[0].name }} </a></h3>
+          <p class="official">Official Name: {{ res_list[0].official }} </p>
+          <p class="Native">Native Name: {{ res_list[0].native }} </p>
+          <p class="common">Common Name: {{ res_list[0].common }} </p>
+          <p class="population">Population: {{ res_list[0].population }} </p>
+          <p class="capital">Capital City: {{ res_list[0].capital }} </p>
+          <p class="continent">Continent: {{res_list[0].continent}} </p>
+          <p class="currency">Currency: {{ res_list[0].currency }} </p>
+          <p class="timezone">Timezone: {{ res_list[0].timezone }} </p>
+          <p class="language">Language: {{ res_list[0].language }} </p>
+          <p class="location">Location: Latitude {{ res_list[0].latitude }} | Longitude {{ res_list[0].longitude }} <a href="{{ res_list[0].location }}" target="_blank">Go to map</a></p>
+          <p class="land-lock">Is Land locked: {{ res_list[0].land }}</p>
+          <p class="area">Area: {{ res_list[0].area }} </p>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
 </html>

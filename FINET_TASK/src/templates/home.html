@@ -3,7 +3,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" />
   </head>
@@ -25,21 +24,18 @@
         {% if result %}
           {% for country in res_list %}
             <div class="search-results">
-              <div class="search-item">
+              <div class="search-item" data-country="{{ country.name }}">
                   <div class="flag"><img src="{{ country.flag }}" alt=""></div>
-                  <h3><a href="{{ country.location }}">{{ country.name }}</a></h3>
+                  <h3><a id="{{ country.id }}" href="{{ country.location }}" target="_blank">{{ country.name }}</a></h3>
                   <p>{{ country.official }} | {{ country.native }}</p>
-                  <div class="search-meta">Population: {{ country.population }} | Capital: {{ country.capital or "unknown" }} | Continent: {{ country.continent }} | Currency: {{ country.currency }} | Timezone: {{ country.timezone }} | Language: {{ country.language }} </div>
+                  <div class="search-meta">Population: {{ country.population or "Unknown" }} | Capital: {{ country.capital or "Unknown" }} | Continent: {{ country.continent }} | Currency: {{ country.currency or "Unknown" }} | Timezone: {{ country.timezone or "Unknown" }} | Language: {{ country.language or "Unknown" }} </div>
               </div>
-      
-              <!-- <div class="search-item">
-                  <div class="flag"><img src="https://flagcdn.com/w320/nl.png" alt=""></div>
-                  <h3><a href="link-to-resource-2">Country Name 2</a></h3>
-                  <p>Brief description of the country, providing key facts and highlights.</p>
-                  <div class="search-meta">Population: 20 million | Capital: Example City 2 | Continent: Example Continent | Currency: ETB</div>
-              </div> -->
             </div>
           {% endfor %}
+        {% elif message %}
+          <div class="search-item red-bck">
+            <div class="no-result"> {{ status }} {{ message }} </div>
+          </div>
         {% endif %}
       </form>
     </div>

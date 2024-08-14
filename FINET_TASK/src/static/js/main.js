@@ -8,6 +8,7 @@ const myEvent =  () => {
     console.log(name);
     if (name) {
         window.location.href = `${myUrl}name/${name}`;
+        console.log(location)
         const myHtml = `<div class="loading-dots">
                             <div class="dot"></div>
                             <div class="dot"></div>
@@ -16,4 +17,13 @@ const myEvent =  () => {
     }
 }
 myButton.addEventListener('click', myEvent);
-myButton.addEventListener('keypress', myEvent);
+const inputField = document.getElementById('search');
+// inputField.addEventListener('keydown', myEvent);
+
+
+document.querySelectorAll('.search-item').forEach(item => {
+    item.addEventListener('click', function() {
+        const countryName = this.getAttribute('data-country');
+        window.location.href = `${myUrl}results/${countryName}`;
+    });
+});

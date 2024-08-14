@@ -473,7 +473,7 @@ legend {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
 }
 
 .dot {
@@ -499,6 +499,8 @@ legend {
       opacity: 0.5;
   }
 }
+
+
 
 .s01 form {
   width: 100%;
@@ -563,17 +565,48 @@ legend {
 }
 .search-item {
   background-color: #fff;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border-radius: 8px;
+  opacity: 80%;
+  animation-name: slide;
+  animation-duration: 1s;
+  transition: transform 0.3s ease, padding 0.3s ease;
+}
+
+.search-item:hover {
+  background-color: #6cb96c;
+  transform: scale(1.03);
+  padding: 15px;
+}
+
+.no-result {
+  padding: 30px;
+}
+
+.no-result:hover {
+  background-color: #d43542;
+}
+
+.red-bck {
+  background-color: #fff;
+  margin-top: 10px;
   margin-bottom: 5px;
   width: 100%;
   border-radius: 8px;
   opacity: 80%;
   animation-name: slide;
   animation-duration: 0.5s;
+  transition: transform 0.3s ease, padding 0.3s ease;
 }
-.search-item:hover {
-  background-color: #6cb96c;
+
+.red-bck:hover {
+  background-color: #d43542;
+  transform: scale(1.03);
+  padding: 15px;
 }
+
 .search-item h3, .search-item p, .search-item .search-meta {
   margin: 10px;
   margin-bottom: 20px;
