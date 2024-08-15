@@ -26,4 +26,4 @@ def removeDuplicates(nums: List[int]) -> int:
     print(nums)
     return k
 
-print(removeDuplicates([i for i in range(1, 10)]))
+print(removeDuplicates([0, 0, 0, 1, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5]))
