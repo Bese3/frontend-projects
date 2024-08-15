@@ -1,5 +1,5 @@
 
-const myUrl = 'http://localhost:5000/discover-ze-world/'
+const myUrl = 'https://projects-vm2m.onrender.com/discover-ze-world/'
 
 const myButton = document.querySelector('.btn-search');
 const myEvent =  () => {
