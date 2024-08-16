@@ -15,7 +15,7 @@ A simple Web application that displays information of countries based on the API
 
 ### APIs
 
-+ ```/discover-ze-world/home```, ```/discover-ze-world/home``` - renders the home page for searching countries
++ ```/discover-ze-world/```, ```/discover-ze-world/home``` - renders the home page for searching countries
 + ```/discover-ze-world/name/<name>``` -  searches a country by the given variable name.
 + ```/disvoer-ze-world/results/<name>``` - renderes detailed result about particular name.
 
