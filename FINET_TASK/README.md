@@ -1,4 +1,4 @@
-# Discover Ze World (Finet Assessment Task)
+# Discover Ze World (Finet Assessment Task) [Live](https://projects-vm2m.onrender.com/discover-ze-world/)
 
 [![Coverage Status](https://coveralls.io/repos/github/Bese3/projects/badge.svg?branch=main)](https://coveralls.io/github/Bese3/projects?branch=main)
 
@@ -7,7 +7,7 @@ A simple Web application that displays information of countries based on the API
 ## Requirements
 + Python
 + Virtual Enviroment
-+ [!Requirment](https://github.com/Bese3/projects/blob/main/FINET_TASK/src/requirements.txt)
++ [Requirment](https://github.com/Bese3/projects/blob/main/FINET_TASK/src/requirements.txt)
 
 ### Applications
 
@@ -38,5 +38,5 @@ python3 -m server
 now navigate to 
 
 ```
-http://localhost:5000/discover-ze-world
+http://localhost:5000/discover-ze-world or use this [link](https://projects-vm2m.onrender.com/discover-ze-world/) to see live demo 
 ```
