@@ -27,7 +27,11 @@ After cloning this repository navigate into the root of the project repository a
 $ python3 -m venv finet
 ```
 
-In my case finet is the name am using.
+In my case finet is the name am using. then start the venv
+
+```
+source finet/bin/activate
+```
 
 ### Usage
 In order to use the API we have to run the server using below command after navigating to [src](https://github.com/Bese3/projects/tree/main/FINET_TASK/src) directory.
