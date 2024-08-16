@@ -38,5 +38,7 @@ python3 -m server
 now navigate to 
 
 ```
-http://localhost:5000/discover-ze-world or use this [link](https://projects-vm2m.onrender.com/discover-ze-world/) to see live demo 
+http://localhost:5000/discover-ze-world 
 ```
+
+or use this [link](https://projects-vm2m.onrender.com/discover-ze-world/) to see live demo 
