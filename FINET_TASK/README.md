@@ -33,6 +33,12 @@ In my case finet is the name am using. then start the venv
 source finet/bin/activate
 ```
 
+or use the [setup](https://github.com/Bese3/projects/tree/main/FINET_TASK/src/setup.sh) script just copy below code and run it in your terminal
+
+```
+source setup.sh
+```
+
 ### Usage
 In order to use the API we have to run the server using below command after navigating to [src](https://github.com/Bese3/projects/tree/main/FINET_TASK/src) directory.
 
