@@ -9,7 +9,8 @@ if [ -d "$venv" ]; then
     echo "Activating virtual environment..."
     source "$activate_path"
     echo "Starting Server..."
-    python3 -m "server"
+    # on production logging must be in log directory of linux
+    echo "Started Server..." && python3 -m "server" > server.log 2>&1
     echo "deactivating Virtual Enviroment..."
     deactivate
 else
@@ -20,7 +21,8 @@ else
     echo "Installing requirments..."
     pip install -r requirements.txt
     echo "Starting Server..."
-    python3 -m "server"
+    # on production logging must be in log directory of linux
+    echo "Started Server..." && python3 -m "server" > server.log 2>&1    
     echo "deactivating Virtual Enviroment..."
     deactivate
 fi
