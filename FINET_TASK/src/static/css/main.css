@@ -607,6 +607,28 @@ legend {
   padding: 15px;
 }
 
+.flash-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #c3b410;
+  opacity: 75%;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none; /* Hidden by default */
+}
+
+.flash-message.show {
+  display: block;
+}
+
+.flash-message.hidden {
+  display: none;
+} 
+
 .search-item h3, .search-item p, .search-item .search-meta {
   margin: 10px;
   margin-bottom: 20px;
