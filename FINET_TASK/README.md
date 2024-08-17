@@ -39,6 +39,12 @@ or use the [setup](https://github.com/Bese3/projects/tree/main/FINET_TASK/src/se
 source setup.sh
 ```
 
+You can test the application using
+
+```
+source tester.sh
+```
+
 ### Usage
 In order to use the API we have to run the server using below command after navigating to [src](https://github.com/Bese3/projects/tree/main/FINET_TASK/src) directory.
 
