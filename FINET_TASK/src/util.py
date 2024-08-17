@@ -25,7 +25,7 @@ def population_rounder(population):
     key_list = list(num_mark.keys())
     for index, value in enumerate(key_list):
         try:
-            if population > value and population < key_list[index + 1]:
+            if population >= value and population < key_list[index + 1]:
                 pop_str = f"{round(population / value)}{num_mark.get(value)}"
                 break
             continue
