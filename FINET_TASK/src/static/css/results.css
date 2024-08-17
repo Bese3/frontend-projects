@@ -3,19 +3,19 @@
   align-items: inherit;
 }
 
-@keyframes slide {
-  0%   {margin-top: 200px;}
-  25%   {margin-top: 100px;}
-  50%  {margin-top: 50px;}
-  75%  {margin-top: 30px;}
-  100% {margin-top: 20px;}
-}
+
 
 .search-item {
   width: 60%;
   margin-top: 25px;
   margin-bottom: 55px;
   transition: unset;
+}
+
+@media (max-width: 768px) {
+  .search-item {
+      width: 100%; 
+  }
 }
 .search-item:hover {
   background-color: #fff;

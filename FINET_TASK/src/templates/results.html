@@ -13,18 +13,18 @@
         <div class="results">
           <div class="flag"><a href="{{res_list[0].flag }}" target="_blank"><img src="{{ res_list[0].flag }}" alt=""></a></div>
           <h3><a id="" href="{{ res_list[0].location }}" target="_blank"> {{ res_list[0].name }} </a></h3>
-          <p class="official">Official Name: {{ res_list[0].official or "Unknown" }} </p>
-          <p class="Native">Native Name: {{ res_list[0].native or "Unknown" }} </p>
-          <p class="common">Common Name: {{ res_list[0].common or "Unknown" }} </p>
-          <p class="population">Population: {{ res_list[0].population or "Unknown" }} </p>
-          <p class="capital">Capital City: {{ res_list[0].capital or "Unknown" }} </p>
-          <p class="continent">Continent: {{res_list[0].continent or "Unknown"}} </p>
-          <p class="currency">Currency: {{ res_list[0].currency or "Unknown" }} </p>
-          <p class="timezone">Timezone: {{ res_list[0].timezone or "Unknown" }} </p>
-          <p class="language">Language: {{ res_list[0].language or "Unknown" }} </p>
-          <p class="location">Location: Latitude {{ res_list[0].latitude or "Unknown" }} | Longitude {{ res_list[0].longitude or "Unknown" }} <a href="{{ res_list[0].location }}" target="_blank">Go to map</a></p>
-          <p class="land-lock">Is Land locked: {{ res_list[0].land or "Unknown" }}</p>
-          <p class="area">Area: {{ res_list[0].area or "Unknown" }} </p>
+          <p class="official"><strong>Official Name:</strong> {{ res_list[0].official or "Unknown" }} </p>
+          <p class="Native"><strong>Native Name:</strong> {{ res_list[0].native or "Unknown" }} </p>
+          <p class="common"><strong>Common Name:</strong> {{ res_list[0].common or "Unknown" }} </p>
+          <p class="population"><strong>Population:</strong> {{ res_list[0].population or "Unknown" }} </p>
+          <p class="capital"><strong>Capital City:</strong> {{ res_list[0].capital or "Unknown" }} </p>
+          <p class="continent"><strong>Continent:</strong> {{res_list[0].continent or "Unknown"}} </p>
+          <p class="currency"><strong>Currency:</strong> {{ res_list[0].currency or "Unknown" }} </p>
+          <p class="timezone"><strong>Timezone:</strong> {{ res_list[0].timezone or "Unknown" }} </p>
+          <p class="language"><strong>Language:</strong> {{ res_list[0].language or "Unknown" }} </p>
+          <p class="location"><strong>Location:</strong> Latitude {{ res_list[0].latitude or "Unknown" }} | Longitude {{ res_list[0].longitude or "Unknown" }} <a href="{{ res_list[0].location }}" target="_blank">Go to map</a></p>
+          <p class="land-lock"><strong>Is Land locked:</strong> {{ res_list[0].land or "Unknown" }}</p>
+          <p class="area"><strong>Area:</strong> {{ res_list[0].area or "Unknown" }} </p>
         </div>
       </div>
     </div>
