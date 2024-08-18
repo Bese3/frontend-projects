@@ -49,7 +49,8 @@ def get_countries_data(name, template):
             {'message': "something got wrong when rendering result"}), 400)
     res_list = []
     try:
-        req_url = f'{third_url}name/{name}' + '?fullText=true' if template == 'results.html' else ""
+        req_url = f'{third_url}name/{name}' 
+        req_url += '?fullText=true' if template == 'results.html' else ""
         with requests.get(req_url) as res:
             if not res.ok:
                 return render_template("home.html", result=False,
